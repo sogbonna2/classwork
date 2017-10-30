@@ -1,0 +1,51 @@
+Uploading a new project to a new repository in Github:
+
+(1) Log into Github, 
+	select "Your Profile," 
+	select "Repositories," 
+	select "New," 
+	insert name for repository (with NO spaces),
+	be sure that "Initialize this repository with a README" is NOT checked, 
+	and select "Create Repository."
+
+
+
+(2) With your new repository page open, open Git (MAC) or Git Bash (WINDOWS).
+git
+
+
+(3) Navigate to your PROJECT FOLDER using the cd command (change directory). Your command should look something like this:
+
+	cd desktop/codify/week0/myFirstSite
+
+Once there, you can verify your location with "pwd" (print working directory) and with "ls" (lists contents of folder).
+
+
+
+(4) Type "git init"
+
+	(this initializes the ".git" folder in your project folder, linking it to Github)
+
+
+
+(5) Type "git add ." 
+
+	(this means "add everything in this folder")
+
+
+
+(6) Type "git commit -m "first commit""
+
+	(this labels this "commit" with a message, which usually is used to indicate the changes made which are now being pushed to Github, but since 	this is a NEW repository, "first commit" will do.)
+
+
+
+(7) Type "git remote add origin "--followed by the github URL for the new repository. So your command should look something like this:
+
+	git remote add origin https://github.com/evanw89/angularQuiz
+
+
+(8) Type "git push origin master"
+
+
+AND YOU'RE DONE! Refresh your repository page in browser and you should see your folder's files there.
